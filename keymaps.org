@@ -1,0 +1,244 @@
+#+DESCRIPTION: Customize keyboard with Emacs
+#+KEYWORDS: keyboard emacs
+#+LANGUAGE: en
+
+* Spaceless Keymap
+(There is actually space key! Just no biggy useless spacebar)
+
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+[[https://i.imgur.com/6rGtGKs.jpg]]
+
+I would like to share my custom keyboard setup with the coummunity. Here is
+a little background. I am a hobbist programmer/tinker and been
+building customize keyboard and developing my own keymaps for a long
+time. Looking for a Haskell development is what lead me to the
+*wonderful Emacs world*. My Emacs setup is mostly base on the idea of
+=evil= and =leader=. I don't really use much of the =modifier= keys, but my
+keymap is actually really good for someone who use default Emacs
+binding.
+
+What get me started on the jounery of custom keyboard is =Plank
+keyboard=. Combing with [[https://github.com/tmk/tmk_keyboard][=TMK firmware=]] or [[https://github.com/qmk/qmk_firmware][=QMK firmware=]] (QMK is a
+fork of TMK which is what I use.) you have endless possibliity. The
+day I realize I can build my own keyboard layout was golrious! Plank
+get all my creative juice flowing but I am not a fan of Cherry switch.
+Luckly there is a custom controller for my daily driver HHKB (Topre
+switch, I will leave the key switch talk out of this post. It's a huge
+topic.) I then remove my HHKB spacebar row and push everything up 1
+row and made the *Spaceless keymap*.
+
+** Some of the highlight from those 2 firmware:
+
+- Dual role key (single key can have dual action base on tap/hold)
+- Leader key (this baby is system wide)
+- Up to 32 layers (layers are like Emacs =minor-mod-map=)
+- Tap dance (different action base on single/double/triple taps)
+- Able to bake in macro
+- Live record macro and play back
+- Simultaneous Key Presses
+- Mouse key movement
+- MIDI controler (like a piano)
+- If you know =C/C++= then anything is possible.
+
+Whith those building blocks I set out to developing my own keymap.
+(For Vim user, you can actually program basic Vim movement layer
+available system-wide)
+
+- No. 1 goal is *CONFORT*
+- pinkey lateral movement is the worst! Avoid it at all cost.
+- Thumbs are the strongest fingers, make the most use of it.
+
+My default letter entering keyboard layout is [[https://colemakmods.github.io/mod-dh/]["Colemak-HD"]] which I found
+super confortable to type. All the top  N(2)-gram words are on the home
+row. Your fingers don't move up and down much. Here are my keymaps!
+
+** Normal map
+ 
+|-----+---+---+-----+-----+-----+-----+-----+-----+---+-----+-----|
+|     | q | w | f   | p   | b   | j   | l   | u   | y |     |     |
+|-----+---+---+-----+-----+-----+-----+-----+-----+---+-----+-----|
+| *0* | a | r | s   | *t* | g   | m   | *n* | e   | i | o   | *1* |
+|-----+---+---+-----+-----+-----+-----+-----+-----+---+-----+-----|
+| *2* | z | x | c   | d   | v   | k   | h   | '   | " | *3* |     |
+|-----+---+---+-----+-----+-----+-----+-----+-----+---+-----+-----|
+|     |   |   | *4* | *5* | *6* | *7* | *8* | *9* |   |     |     |
+|-----+---+---+-----+-----+-----+-----+-----+-----+---+-----+-----|
+The homerow bump key is in bold.
+
+
+- *0* TAP: `(`         HOLD: `CMD`
+- *1* TAP: `<leader>`
+- *2* TAP: `<escape>`  HOLD: `<CMD+ALT+SHIFT>`
+- *3* TAP: `<return>`  HOLD: `<CMD+CTRL+SHIFT>
+- *4* TAP: `_`         HOLD: `ALT`
+- *5* TAP: `<delete>`  HOLD: `enter NUMBER-MAP`  with *8* `backward-delete`
+- *6* TAP: `M-x`       HOLD: `SHIFT`
+- *7* TAP: `.`         HOLD: `SHIFT`             with *5* `,`
+- *8* TAP: `<space>`   HOLD: `enter SYMBOL-MAP`  with *5* `<TAB>`
+- *9* TAP:  `=`        HOLD: `CTRL`
+
+- =SHIFT=, =ALT=, and =CTRL= are all trigger by THUMBS easily.
+
+- SHIFT are both in the middle. Compare to the old position which pin
+  one of your pinky plus pinky lateral movement. It made typing CAPS
+  WORDS super easy. With SHIFT in the middle I can get away with just
+  one of them really.
+
+- I use dual-role key on all my =modifier=.
+
+- In normal map I lifted `'` and `"` to their own keys. (instead of
+  tridictional on top of each other.)
+
+- *1* It's a system-wide leader key, I use mostly for window
+  management, switch apps and simple snippits.
+
+- *2* and *3* those crazy 3 modifiers combo are convenient modifier key for
+  not shadowing any default keys. One key press I get 3 modifiers :)
+
+- `M-x` is the latest addition to the keymap!! I actually use double
+  tap `<space>` to trigger `counsel-MX` but can't help to throw it in
+  there to show my love for Emacs.
+
+- top right key which is not showing in this map is =search current
+  selected word in Google= Definelly one of my favorite key. :)
+
+** Symbol map
+
+|---+---+---+---+-----+---+---+-----+---+---+---+---+---|
+|   |   | ~ | ( | )   |   |   | [   | ] | ; |   |   |   |
+|---+---+---+---+-----+---+---+-----+---+---+---+---+---|
+|   | / | - | - | *+* | $ | % | *@* | ! |   |   | \ |   |
+|---+---+---+---+-----+---+---+-----+---+---+---+---+---|
+|   | ` | ^ | { | }   | & | ? | <   | > | # | : |   |   |
+|---+---+---+---+-----+---+---+-----+---+---+---+---+---|
+|   |   |   |   |     |   |   | *X* |   |   |   |   |   |
+|---+---+---+---+-----+---+---+-----+---+---+---+---+---|
+
+- *X* mark it thumb pressed down to enable this map.
+
+** Number map
+
+|---+------+------+------+---------+-----+---+-----+---+---+---+---|
+|   |      | PgUp | Up   | PgDw    |     |   |   1 | 2 | 3 |   |   |
+|---+------+------+------+---------+-----+---+-----+---+---+---+---|
+|   | HOME | Left | DOWN | *Right* | END | . | *4* | 5 | 6 | 0 |   |
+|---+------+------+------+---------+-----+---+-----+---+---+---+---|
+|   | RET  | MRC  | TAB  | Space   |     |   |   7 | 8 | 9 |   |   |
+|---+------+------+------+---------+-----+---+-----+---+---+---+---|
+|   |      |      |      | *X*     |     |   |     |   |   |   |   |
+|---+------+------+------+---------+-----+---+-----+---+---+---+---|
+
+- *X* mark it thumb pressed down to enable this map.
+- MRC is right mouse bottom.
+- My right hand is holding a stylus when I am doing graphic design
+  stuff. So I made my left hand being able to trigger some of the most
+  common keys as well like =RET=, =RIGHT MOUSE CLICK=, =TAB= and
+  =SPACE=.
+
+There are some more maps but it's mostly personal workflow I will just
+leave it out. The point of this post is about the idea not super fine
+grain detials.
+
+One things Emacs made me realize the beauty of having =normal=,
+=symbol= and =number= maps lay on top of each other is each key
+position has 3 mnemonics meaning to me. For example the key that house
+=h=, =<=, =7= has 3 meaning which is super helpful to cerate mnemonics
+hotkeys. It could mean =Help=, =<= (directional, indent or
+grow/shrink) and =7= when combine with other modifier.
+
+Here is an example I could assign
+
+|------------------+--------------------+---------------+---------------|
+| modifier key     | grouping           | single key    | meaning       |
+|                  |                    | think in head |               |
+|                  |                    | as            |               |
+|------------------+--------------------+---------------+---------------|
+| <CMD+ALT+SHIFT>  | <= ivy related     | "<"           | shrink buffer |
+|                  |                    | (scale)       |               |
+|------------------+--------------------+---------------+---------------|
+| <CMD+CTRL+SHIFT> | <= Paredit related | "<"           | slurping      |
+|                  |                    | (directional) |               |
+|------------------+--------------------+---------------+---------------|
+| <CTRL>           | <= Emacs           | "h"           | C-h           |
+|                  |                    | (help)        |               |
+|------------------+--------------------+---------------+---------------|
+
+In the 3rd column are all the same physical key.
+When I wanna trigger `ivy-minibuffer-shrink` it is actually assign to
+`<CMD+ALT+SHIFT> + h` (It's only 2 key press not 4) but in my head I
+think that key as `<` not `h`.
+
+Another quick example would be like
+
+|------------------+--------------------+---------------+--------------------|
+| modifier key     | grouping           | single key    | meaning            |
+|                  |                    | think in head |                    |
+|                  |                    | as            |                    |
+|------------------+--------------------+---------------+--------------------|
+| <CMD+ALT+SHIFT>  | <= ivy related     | "!"           | ivy-immediate-done |
+|                  |                    | (immediate)   |                    |
+|------------------+--------------------+---------------+--------------------|
+| <CMD+CTRL+SHIFT> | <= Paredit related | "e"           | barfing            |
+|                  |                    | (Extend)      |                    |
+|------------------+--------------------+---------------+--------------------|
+
+(without Org-mode table I don't know how would I write this post!)
+
+** Keyboard that I would recommend people who is interested in *spaceless keymap*
+
+All of the fallowing keyboard are programable and have small spacebar.
+
+- [[https://olkb.com][Plank]]
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+[[https://i.imgur.com/9UWvby9.png]]
+
+- HHKB (Topre switch) with hasu's controller
+  [[https://geekhack.org/index.php?topic=12047.0][hasu's controller]]
+  He is also the creater of `TMK-firmware` SUPER awesome guy!
+
+- HHKB Japanese version (Topre)
+  If you don't want to remove the bottom row. Their spacebar is way
+  smaller.
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+[[https://i.imgur.com/cctVn3V.png]]
+
+- Ergodox
+  There are many different vender for this. Google it.
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+[[https://i.imgur.com/AjSRIJx.jpg]]
+
+- [[https://thevankeyboards.com][MiniVan]]
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+[[https://i.imgur.com/O4d1dWz.jpg]]
+
+** Outro
+
+Hope this inspire someone to create their own AWESOME keyborad/map.
+If you have any question you can find me at:
+
+Reddit:
+/u/fallencat (mostly hang out at /r/emacs)
+
+Twitter:
+@Dunkaroo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
