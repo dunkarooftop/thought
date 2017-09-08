@@ -68,16 +68,16 @@ row. Your fingers don't move up and down much. Here are my keymaps!
 The homerow bump key is in bold.
 
 
-- *0* TAP: `(`         HOLD: `CMD`
-- *1* TAP: `<leader>`
-- *2* TAP: `<escape>`  HOLD: `<CMD+ALT+SHIFT>`
-- *3* TAP: `<return>`  HOLD: `<CMD+CTRL+SHIFT>
-- *4* TAP: `_`         HOLD: `ALT`
-- *5* TAP: `<delete>`  HOLD: `enter NUMBER-MAP`  with *8* `backward-delete`
-- *6* TAP: `M-x`       HOLD: `SHIFT`
-- *7* TAP: `.`         HOLD: `SHIFT`             with *5* `,`
-- *8* TAP: `<space>`   HOLD: `enter SYMBOL-MAP`  with *5* `<TAB>`
-- *9* TAP:  `=`        HOLD: `CTRL`
+- *0* TAP: =(=         HOLD: =CMD=
+- *1* TAP: =<leader>=
+- *2* TAP: =<escape>=  HOLD: =<CMD+ALT+SHIFT>=
+- *3* TAP: =<return>=  HOLD: =<CMD+CTRL+SHIFT>=
+- *4* TAP: =_=         HOLD: =ALT=
+- *5* TAP: =<delete>=  HOLD: =enter NUMBER-MAP=  with *8* =backward-delete=
+- *6* TAP: =M-x=       HOLD: =SHIFT=
+- *7* TAP: =.=         HOLD: =SHIFT=             with *5* =,=
+- *8* TAP: =<space>=   HOLD: =enter SYMBOL-MAP=  with *5* =<TAB>=
+- *9* TAP: =\equal=         HOLD: =CTRL=
 
 - =SHIFT=, =ALT=, and =CTRL= are all trigger by THUMBS easily.
 
@@ -88,7 +88,7 @@ The homerow bump key is in bold.
 
 - I use dual-role key on all my =modifier=.
 
-- In normal map I lifted `'` and `"` to their own keys. (instead of
+- In normal map I lifted ='= and ="= to their own keys. (instead :of
   tridictional on top of each other.)
 
 - *1* It's a system-wide leader key, I use mostly for window
@@ -170,9 +170,9 @@ Here is an example I could assign
 |------------------+--------------------+---------------+---------------|
 
 In the 3rd column are all the same physical key.
-When I wanna trigger `ivy-minibuffer-shrink` it is actually assign to
-`<CMD+ALT+SHIFT> + h` (It's only 2 key press not 4) but in my head I
-think that key as `<` not `h`.
+When I wanna trigger =ivy-minibuffer-shrink= it is actually assign to
+=<CMD+ALT+SHIFT> + h= (It's only 2 key press not 4) but in my head I
+think that key as =<= not =h=.
 
 Another quick example would be like
 
