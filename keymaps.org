@@ -18,7 +18,7 @@ keymap is actually really good for someone who use default Emacs
 binding.
 
 What get me started on the jounery of custom keyboard is =Plank
-keyboard=. Combing with [[https://github.com/tmk/tmk_keyboard][=TMK firmware=]] or [[https://github.com/qmk/qmk_firmware][=QMK firmware=]] (QMK is a
+keyboard=. Combing with [[https://github.com/tmk/tmk_keyboard][TMK firmware]] or [[https://github.com/qmk/qmk_firmware][QMK firmware]] (QMK is a
 fork of TMK which is what I use.) you have endless possibliity. The
 day I realize I can build my own keyboard layout was golrious! Plank
 get all my creative juice flowing but I am not a fan of Cherry switch.
@@ -54,29 +54,30 @@ row. Your fingers don't move up and down much. Here are my keymaps!
 
 ** Normal 
 
-|-------+---+---+-------+-------+-------+-------+-------+-------+---+-------+-------|
-|-------+---+---+-------+-------+-------+-------+-------+-------+---+-------+-------|
-|       | q | w | f     | p     | b     | j     | l     | u     | y |       |       |
-|-------+---+---+-------+-------+-------+-------+-------+-------+---+-------+-------|
-| *<0>* | a | r | s     | *t*   | g     | m     | *n*   | e     | i | o     | *<1>* |
-|-------+---+---+-------+-------+-------+-------+-------+-------+---+-------+-------|
-| *<2>* | z | x | c     | d     | v     | k     | h     | '     | " | *<3>* |       |
-|-------+---+---+-------+-------+-------+-------+-------+-------+---+-------+-------|
-|       |   |   | *<4>* | *<5>* | *<6>* | *<7>* | *<8>* | *<9>* |   |       |       |
-|-------+---+---+-------+-------+-------+-------+-------+-------+---+-------+-------|
+|-----+---+---+-----+-----+-----+-----+-----+-----+---+-----+-----|
+|     |   |   |     |     |     |     |     |     |   |     |     |
+|-----+---+---+-----+-----+-----+-----+-----+-----+---+-----+-----|
+|     | q | w | f   | p   | b   | j   | l   | u   | y |     |     |
+|-----+---+---+-----+-----+-----+-----+-----+-----+---+-----+-----|
+| *0* | a | r | s   | *t* | g   | m   | *n* | e   | i | o   | *1* |
+|-----+---+---+-----+-----+-----+-----+-----+-----+---+-----+-----|
+| *2* | z | x | c   | d   | v   | k   | h   | '   | " | *3* |     |
+|-----+---+---+-----+-----+-----+-----+-----+-----+---+-----+-----|
+|     |   |   | *4* | *5* | *6* | *7* | *8* | *9* |   |     |     |
+|-----+---+---+-----+-----+-----+-----+-----+-----+---+-----+-----|
 The homerow bump key is in bold.
 
 
-- *<0>* TAP: `(`         HOLD: `CMD`
-- *<1>* TAP: `<leader>`
-- *<2>* TAP: `<escape>`  HOLD: `<CMD+ALT+SHIFT>`
-- *<3>* TAP: `<return>`  HOLD: `<CMD+CTRL+SHIFT>
-- *<4>* TAP: `_`         HOLD: `ALT`
-- *<5>* TAP: `<delete>`  HOLD: `enter NUMBER-MAP`  with *<8>* `backward-delete`
-- *<6>* TAP: `M-x`       HOLD: `SHIFT`
-- *<7>* TAP: `.`         HOLD: `SHIFT`             with *<5>* `,`
-- *<8>* TAP: `<space>`   HOLD: `enter SYMBOL-MAP`  with *<5>* `<TAB>`
-- *<9>* TAP:  `=`        HOLD: `CTRL`
+- *0* TAP: `(`         HOLD: `CMD`
+- *1* TAP: `<leader>`
+- *2* TAP: `<escape>`  HOLD: `<CMD+ALT+SHIFT>`
+- *3* TAP: `<return>`  HOLD: `<CMD+CTRL+SHIFT>
+- *4* TAP: `_`         HOLD: `ALT`
+- *5* TAP: `<delete>`  HOLD: `enter NUMBER-MAP`  with *8* `backward-delete`
+- *6* TAP: `M-x`       HOLD: `SHIFT`
+- *7* TAP: `.`         HOLD: `SHIFT`             with *5* `,`
+- *8* TAP: `<space>`   HOLD: `enter SYMBOL-MAP`  with *5* `<TAB>`
+- *9* TAP:  `=`        HOLD: `CTRL`
 
 - =SHIFT=, =ALT=, and =CTRL= are all trigger by THUMBS easily.
 
@@ -106,6 +107,7 @@ The homerow bump key is in bold.
 ** Symbol map
 
 |---+---+---+---+-----+---+---+-----+---+-------+---+---|
+|   |   |   |   |     |   |   |     |   |       |   |   |
 |---+---+---+---+-----+---+---+-----+---+-------+---+---|
 |   |   | ~ | ( | )   |   |   | [   | ] | ;     |   |   |
 |---+---+---+---+-----+---+---+-----+---+-------+---+---|
@@ -121,6 +123,7 @@ The homerow bump key is in bold.
 ** Number map
 
 |---+------+------+------+---------+-----+---+-----+---+---+---+---|
+|   |      |      |      |         |     |   |     |   |   |   |   |
 |---+------+------+------+---------+-----+---+-----+---+---+---+---|
 |   |      | PgUp | Up   | PgDw    |     |   |   1 | 2 | 3 |   |   |
 |---+------+------+------+---------+-----+---+-----+---+---+---+---|
