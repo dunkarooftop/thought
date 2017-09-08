@@ -6,7 +6,7 @@
 (There is actually space key! Just no biggy useless spacebar)
 
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
-[[https://i.imgur.com/6rGtGKs.jpg]]
+[[https://i.imgur.com/Hh2OClk.jpg]]
 
 I would like to share my custom keyboard setup with the coummunity. Here is
 a little background. I am a hobbist programmer/tinker and been
