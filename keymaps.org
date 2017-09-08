@@ -75,7 +75,7 @@ The homerow bump key is in bold.
 - *4* TAP: =_=         HOLD: =ALT=
 - *5* TAP: =<delete>=  HOLD: =enter NUMBER-MAP=  with *8* =backward-delete=
 - *6* TAP: =M-x=       HOLD: =SHIFT=
-- *7* TAP: =.=         HOLD: =SHIFT=             with *5* =,=
+- *7* TAP: =.=         HOLD: =SHIFT=             with *5* =\c{}=
 - *8* TAP: =<space>=   HOLD: =enter SYMBOL-MAP=  with *5* =<TAB>=
 - *9* TAP: =\equal=         HOLD: =CTRL=
 
@@ -88,7 +88,7 @@ The homerow bump key is in bold.
 
 - I use dual-role key on all my =modifier=.
 
-- In normal map I lifted ='= and ="= to their own keys. (instead :of
+- In normal map I lifted =\prime= and =\prime{}\prime= to their own keys. (instead :of
   tridictional on top of each other.)
 
 - *1* It's a system-wide leader key, I use mostly for window
@@ -97,8 +97,8 @@ The homerow bump key is in bold.
 - *2* and *3* those crazy 3 modifiers combo are convenient modifier key for
   not shadowing any default keys. One key press I get 3 modifiers :)
 
-- `M-x` is the latest addition to the keymap!! I actually use double
-  tap `<space>` to trigger `counsel-MX` but can't help to throw it in
+- =M-x= is the latest addition to the keymap!! I actually use double
+  tap =<space>= to trigger =counsel-MX= but can't help to throw it in
   there to show my love for Emacs.
 
 - top right key which is not showing in this map is =search current
